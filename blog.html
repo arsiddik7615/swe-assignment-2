@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>ARSiddik</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container mt-4">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Discuss the scope of var, let, and const
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                <strong>Var: </strong> Var declarations were the standard before
+                ES6 was introduced. However, variables declared with var are not
+                without problems.
+                <br />
+                <ol>
+                  <li>The scope of a var variable is functional scope.</li>
+                  <li>It can be updated and re-declared into the scope.</li>
+                  <li>It can be declared without initialization.</li>
+                  <li>It can be accessed without initialization as its default value is “undefined”.</li>
+                </ol>
+                
+              </p>
+              <p>
+                <strong>Let: </strong> let is now preferred for variable declaration. It's no surprise as it comes as an improvement to var declarations. It also solves the problem with var.
+                <ol>
+                  <li>The scope of a let variable is block scope.</li>
+                  <li>It can be updated but cannot be re-declared into the scope.</li>
+                  <li>It can be declared without initialization.</li>
+                  <li>It cannot be accessed without initialization otherwise it will give ‘referenceError’.</li>
+                </ol>
+              </p>
+              <p>
+                <strong>Const: </strong> Variables declared with the const maintain constant values. const declarations share some similarities with let declarations.
+                <ol>
+                  <li>The scope of a const variable is block scope.</li>
+                  <li>It cannot be updated or re-declared into the scope.</li>
+                  <li>It cannot be declared without initialization.</li>
+                  <li>It cannot be accessed without initialization, as it cannot be declared without initialization.</li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Tell us the use cases of null and undefined
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>Null and undefined, though commonly interpreted as the same, differ in a few ways.
+                <br>
+                Null: The value is purposefully left out. It is one of JavaScript's basic values. null is a special value in JavaScript that represents the intentional absence of any object value. It is often used when you want to explicitly set a variable to have no value or when an object property should be empty. Here’s an example: <br>
+
+                let emptyVariable = null; <br>
+                
+                console.log(emptyVariable); // Output: null <br>
+                <br>
+                Undefined: It indicates that the value is missing from the compiler. It is the world's object. undefined is another special value in JavaScript that represents a variable that has not been assigned a value. When you declare a variable without assigning any value to it, JavaScript automatically assigns the value undefined. Here’s an example: <br>
+
+                let uninitializedVariable; <br>
+                
+                console.log(uninitializedVariable); // Output: undefined 
+                <br>
+                
+                Null: Object 
+                <br>
+                Undefined: Undefined
+                <br>
+                null == undefined // true <br>
+                null === undefined // false <br>
+                It indicates that null and undefined are equivalent but distinct. <br>
+                
+                We are attempting to communicate that a variable does not exist when we define it to undefined. We are attempting to communicate that a variable is empty when we define it to null.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              What do you mean by REST API?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>Web services can be accessed with ease using a REST API. The server will send a representation of the requested resource's state to the client when a RESTful API is invoked. A RESTful API uses defined base URLs and methods to carry out the operations necessary to modify, add, or remove data. It is stateless, isolates client-server concerns, and for client-side data caching.
+                <br>
+                An API that complies with the representational state transfer, or REST, architectural style's design principles is known as a REST API. Because of this, REST APIs are also known as RESTful APIs.
+                <br>
+                Example: <br>
+                <code>
+                  {
+                    "user1" : {
+                       "name" : "mahesh",
+                       "password" : "password1",
+                       "profession" : "teacher",
+                       "id": 1
+                    },
+                    
+                    "user2" : {
+                       "name" : "suresh",
+                       "password" : "password2",
+                       "profession" : "librarian",
+                       "id": 2
+                    },
+                    
+                    "user3" : {
+                       "name" : "ramesh",
+                       "password" : "password3",
+                       "profession" : "clerk",
+                       "id": 3
+                    }
+                 }
+                </code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 text-center">
+        <a class='home' href='/'>Home</a>
+      </div>
+    </main>
+
+    <footer class="container-fluid mt-5">
+      <h5 class="text-center">
+        ©Copyright by
+        <a href="#">ARSiddik</a>
+      </h5>
+    </footer>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
